@@ -70,7 +70,7 @@ function takeCommand(message) {
         window.open("https://www.facebook.com", "_blank");
     } else if (message.includes("open whatsapp")) {
         speak("Opening WhatsApp...");
-        window.open("whatsapp://");
+        window.open("https://www.whatsapp.com","_blank");
     } else if (message.includes("open calculator")) {
         speak("Opening calculator...");
         window.open("calculator://");
@@ -85,6 +85,18 @@ function takeCommand(message) {
     }else if(message.includes("what is your name")){
         speak("my name is jarviz")
 
+    }else if(message.includes("bye")){
+        speak("Nice to talk to you")
+    }else if(message.includes("open linkedin")){
+        speak("opening linkedin...")
+        window.open("https://www.linkedin.com","_blank")
+    }
+    else if(message.includes("open notepad")){
+        speak("opening notepad...")
+        window.open("notepad://");
+    }else if(message.includes("open github ")){
+        speak("opening github")
+        window.open("https://www.github.com","_blank")
     }
     else {
         let finalText = `This is what I found on the internet regarding ${message.replace("jarviz", "")}`;
