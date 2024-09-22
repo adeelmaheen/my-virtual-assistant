@@ -93,7 +93,7 @@ function takeCommand(message) {
     }
     else if(message.includes("open notepad")){
         speak("opening notepad...")
-        window.open("notepad://");
+        window.open("https://www.Notepad.com","_blank");
     }else if(message.includes("open github ")){
         speak("opening github")
         window.open("https://www.github.com","_blank")
