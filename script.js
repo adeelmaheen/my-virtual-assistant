@@ -53,7 +53,7 @@ function takeCommand(message) {
     voice.style.display = "none"; // Hide the animated voice GIF
 
     if (message.includes("hello") || message.includes("hey")) {
-        speak("Hello sir, how can I help you?");
+        speak("Hello dear, how can I help you?");
     } else if (message.includes("who are you")) {
         speak("I am a virtual assistant, created by Maheen Arif.");
     } else if (message.includes("open youtube")) {
